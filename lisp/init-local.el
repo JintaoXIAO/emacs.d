@@ -1,4 +1,7 @@
-(provide 'init-local)
+;;; init-local  --- my
+;;; Commentary:
+;;; Code:
+
 
 ;; set default font
 (when (member "PT Mono" (font-family-list))
@@ -26,3 +29,7 @@
   (progn
     (setq initial-frame-alist '( (tool-bar-lines . 0)))
     (setq default-frame-alist '( (tool-bar-lines . 0)))))
+
+
+(provide 'init-local)
+;;; init-local.el ends here
