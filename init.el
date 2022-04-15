@@ -34,7 +34,7 @@
 ;; Bootstrap config
 
 
-(setq custom-file (expand-file-name "custom.el" user-emacs-directory))
+(setq custom-file (locate-user-emacs-file "custom.el"))
 (require 'init-utils)
 (require 'init-site-lisp) ;; Must come before elpa, as it may provide package.el
 ;; Calls (package-initialize)
@@ -60,7 +60,8 @@
 (require 'init-grep)
 (require 'init-uniquify)
 (require 'init-ibuffer)
-(require 'init-flycheck)
+(require 'init-flymake)
+(require 'init-eglot)
 
 (require 'init-recentf)
 (require 'init-minibuffer)
